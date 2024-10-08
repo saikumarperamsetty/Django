@@ -1,0 +1,18 @@
+{% load custom_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom_filters page</title>
+</head>
+<body>
+    <h1>Template Filters</h1>
+        <p>{{name|add_hello}}</p>
+        <p>Square of Number 28 : {{28|squareNumbers}}</p>
+        <p>Reverse String of DJANGO: {{"DJANGO"|reverse_string}}</p>
+        <p>Absolute value of -28: {{-28|absolute}}</p>
+        <p>Factorial of 5: {{5|factorial}}</p>
+        <p>28 is Even or Odd : {{28|even_or_odd}}</p>
+</body>
+</html>
